@@ -11,7 +11,7 @@ export const SIGN_IN = async (req, res) => {
       id: uuidv4,
       name: req.body.name,
       email: req.body.email,
-      password: req.body.password,
+      password: hash,
       plugins: [],
     });
 
