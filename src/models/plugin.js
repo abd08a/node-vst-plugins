@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 
 const pluginSchema = mongoose.Schema({
   id: { type: String, required: true },
+  userId: { type: String, required: true },
   developer: { type: String, required: true },
   title: { type: String, required: true },
   description: { type: String, required: true },
